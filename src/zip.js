@@ -29,7 +29,7 @@ module.exports = function(gj, options) {
     });
 
     return zip.generateAsync({
-        type: process.browser === undefined ? 'nodebuffer' : 'blob',
+        type: 'blob',
         compression: 'DEFLATE'
     });
 };
